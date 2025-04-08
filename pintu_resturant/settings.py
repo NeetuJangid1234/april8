@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "users"
 ]
+
+AUTH_USER_MODEL="users.Users"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -75,7 +78,7 @@ WSGI_APPLICATION = 'pintu_resturant.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'pintu_resturant.sqlite3',
     }
 }
 
